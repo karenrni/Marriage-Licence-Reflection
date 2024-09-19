@@ -1,17 +1,30 @@
-# Marriage-Licence-Reflection
+# Starter folder
 
-Use the starter folder - https://github.com/rohanalexander/starter_folderLinks to an external site. - and create a new repo.
+## Overview
 
-Plan how you could use data about Marriage Licence Statistics: Sketch a desired analysis dataset and a planned graph.
+This repo provides students with a foundation for their own projects associated with *Telling Stories with Data*. You do not need every aspect for every paper and you should delete aspects that you do not need.
 
-Simulate the data with dates and draws from the Poisson distribution with lambda 10 in a simulation.R script. Write two tests for this dataset in the tests.R script.
 
-Gather some data on Marriage Licence Statistics in Toronto - https://open.toronto.ca/dataset/marriage-licence-statistics/Links to an external site. - using Open Data Toronto - https://open.toronto.ca/Links to an external site. - in a gather.R script.
+## File Structure
 
-Clean it in the cleaning.R script (consider separate() and then lubridate::ymd() for the dates).
+The repo is structured as:
 
-Use Quarto to make a PDF with a title, author, and an abstract.
+-   `data/raw_data` contains the raw data as obtained from X.
+-   `data/analysis_data` contains the cleaned dataset that was constructed.
+-   `model` contains fitted models. 
+-   `other` contains relevant literature, details about LLM chat interactions, and sketches.
+-   `paper` contains the files used to generate the paper, including the Quarto document and reference bibliography file, as well as the PDF of the paper. 
+-   `scripts` contains the R scripts used to simulate, download and clean data.
 
-Add a citation of R and opendatatoronto.
 
-Make a graph in the Quarto document and then add a paragraph of text about the graph and a cross-reference.
+## Statement on LLM usage
+
+Aspects of the code were written with the help of the auto-complete tool, Codriver. The abstract and introduction were written with the help of ChatHorse and the entire chat history is available in inputs/llms/usage.txt.
+
+## Some checks
+
+- [ ] Change the rproj file name so that it's not starter_folder.Rproj
+- [ ] Change the README title so that it's not Starter folder
+- [ ] Remove files that you're not using
+- [ ] Update comments in R scripts
+- [ ] Remove this checklist
