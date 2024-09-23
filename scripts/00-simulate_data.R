@@ -1,6 +1,6 @@
 #### Preamble ####
 # Purpose: Simulates data
-# Author: Karen
+# Author: karen
 # Date: 19 September 2024
 # License: MIT
 # Pre-requisites: None

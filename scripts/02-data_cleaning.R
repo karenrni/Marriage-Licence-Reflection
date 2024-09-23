@@ -16,10 +16,10 @@ cleaned_data <-
   raw_data |>
   janitor::clean_names() |> 
   separate(col = time_period,
-            into = c("year", "month"),
-            sep = "-") |> 
+           into = c("year", "month"),
+           sep = "-") |> 
   mutate(date = lubridate::ymd(paste(year, month, "01", sep = "-"))
-         )
-  
+  )
+
 #### Save data ####
 write_csv(cleaned_data, "data/analysis_data/analysis_data.csv")
